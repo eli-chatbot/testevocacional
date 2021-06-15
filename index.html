@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Eli | Assistente vocacional</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="background">
+
+          <div class="eli"></div>
+
+          <div class="text">
+
+            <p>Oi, eu sou Eli: seu assistente vocacional</p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "7353e928-c634-46ee-b5bb-6c635bbc8e70", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "6afdc0ba-518c-4852-a9b8-eaec5d4e57e0", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+
+    function escrever(el) {
+
+      const textoArray = el.innerHTML.split('');
+
+      el.innerHTML = '';
+
+      textoArray.forEach((letra, i) => {
+        setTimeout(() => {
+          el.innerHTML += letra;
+        }, 90 * i)
+      });
+    }
+
+    const text = document.querySelector('p');
+    escrever(text);
+
+  </script>
+</html>
