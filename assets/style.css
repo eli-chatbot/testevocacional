@@ -112,7 +112,7 @@
   .steps .right p{
     width: 90%;
     margin-left: 50px;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -129,7 +129,7 @@
   }
 
   .steps .left span{
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 15vh;
     color: white;
