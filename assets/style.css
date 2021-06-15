@@ -243,7 +243,14 @@
     }
 
     .background {
-      height: 40vh;
+      height: 70vh;
     }
+  }
+  .steps .left p{
+    height: 30vh;
+  }
+
+  .steps .right p{
+    margin: 20px;
   }
   }
